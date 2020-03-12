@@ -40,79 +40,82 @@ if(daysElapsed / 20 == Math.floor(daysElapsed/20)) {
 
 switch(mayanMonth) {
     case 0:
-        monthIcon.src = 'assets/1_pop.svg';
-        monthName.innerHTML = mayanMonths[0];
+        mayanMonthIcon.src = 'assets/1_pop.svg';
+        mayanMonthName.innerHTML = mayanMonths[0];
         break;
     case 1:
-        monthIcon.src = 'assets/2_wo.svg';
-        monthName.innerHTML = mayanMonths[1];
+        mayanMonthIcon.src = 'assets/2_wo.svg';
+        mayanMonthName.innerHTML = mayanMonths[1];
         break;
     case 2:
-        monthIcon.src = 'assets/3_sip.svg';
-        monthName.innerHTML = mayanMonths[2];
+        mayanMonthIcon.src = 'assets/3_sip.svg';
+        mayanMonthName.innerHTML = mayanMonths[2];
         break;
     case 3:
-        monthIcon.src = 'assets/4_sotz.svg';
-        monthName.innerHTML = mayanMonths[3];
+        mayanMonthIcon.src = 'assets/4_sotz.svg';
+        mayanMonthName.innerHTML = mayanMonths[3];
         break;
     case 4:
-        monthIcon.src = 'assets/5_sek.svg';
-        monthName.innerHTML = mayanMonths[4];
+        mayanMonthIcon.src = 'assets/5_sek.svg';
+        mayanMonthName.innerHTML = mayanMonths[4];
         break;
     case 5:
-        monthIcon.src = 'assets/6_xul.svg';
-        monthName.innerHTML = mayanMonths[5];
+        mayanMonthIcon.src = 'assets/6_xul.svg';
+        mayanMonthName.innerHTML = mayanMonths[5];
         break;
     case 6:
-        monthIcon.src = 'assets/7_yaxkin.svg';
-        monthName.innerHTML = mayanMonths[6];
+        mayanMonthIcon.src = 'assets/7_yaxkin.svg';
+        mayanMonthName.innerHTML = mayanMonths[6];
         break;
     case 7:
-        monthIcon.src = 'assets/8_mol.svg';
-        monthName.innerHTML = mayanMonths[7];
+        mayanMonthIcon.src = 'assets/8_mol.svg';
+        mayanMonthName.innerHTML = mayanMonths[7];
         break;
     case 8:
-        monthIcon.src = 'assets/9_chen.svg';
-        monthName.innerHTML = mayanMonths[8];
+        mayanMonthIcon.src = 'assets/9_chen.svg';
+        mayanMonthName.innerHTML = mayanMonths[8];
         break;
     case 9:
-        monthIcon.src = 'assets/10_yax.svg';
-        monthName.innerHTML = mayanMonths[9];
+        mayanMonthIcon.src = 'assets/10_yax.svg';
+        mayanMonthName.innerHTML = mayanMonths[9];
         break;
     case 10:
-        monthIcon.src = 'assets/11_sak.svg';
-        monthName.innerHTML = mayanMonths[10];
+        mayanMonthIcon.src = 'assets/11_sak.svg';
+        mayanMonthName.innerHTML = mayanMonths[10];
         break;
     case 11:
-        monthIcon.src = 'assets/12_keh.svg';
-        monthName.innerHTML = mayanMonths[11];
+        mayanMonthIcon.src = 'assets/12_keh.svg';
+        mayanMonthName.innerHTML = mayanMonths[11];
         break;
     case 12:
-        monthIcon.src = 'assets/13_mak.svg';
-        monthName.innerHTML = mayanMonths[12];
+        mayanMonthIcon.src = 'assets/13_mak.svg';
+        mayanMonthName.innerHTML = mayanMonths[12];
         break;
     case 13:
-        monthIcon.src = 'assets/14_kankin.svg';
-        monthName.innerHTML = mayanMonths[13];
+        mayanMonthIcon.src = 'assets/14_kankin.svg';
+        mayanMonthName.innerHTML = mayanMonths[13];
         break;
     case 14:
-        monthIcon.src = 'assets/15_muwan.svg';
-        monthName.innerHTML = mayanMonths[14];
+        mayanMonthIcon.src = 'assets/15_muwan.svg';
+        mayanMonthName.innerHTML = mayanMonths[14];
         break;
     case 15:
-        monthIcon.src = 'assets/16_pax.svg';
-        monthName.innerHTML = mayanMonths[15];
+        mayanMonthIcon.src = 'assets/16_pax.svg';
+        mayanMonthName.innerHTML = mayanMonths[15];
         break;
     case 16:
-        monthIcon.src = 'assets/17_kayab.svg';
-        monthName.innerHTML = mayanMonths[16];
+        mayanMonthIcon.src = 'assets/17_kayab.svg';
+        mayanMonthName.innerHTML = mayanMonths[16];
         break;
     case 17:
-        monthIcon.src = 'assets/18_kumku.svg';
-        monthName.innerHTML = mayanMonths[17];
+        mayanMonthIcon.src = 'assets/18_kumku.svg';
+        mayanMonthName.innerHTML = mayanMonths[17];
         break;
     default:
-        monthIcon.src = '?';
-        monthName.innerHTML = mayanMonths[18];
+        mayanMonthIcon.src = '?';
+        mayanMonthName.innerHTML = mayanMonths[18];
         break;
 }
+
+monthDay.innerHTML = date.getDate();
+monthName.innerHTML = months[date.getMonth()];

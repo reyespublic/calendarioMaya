@@ -36,7 +36,7 @@ body {
     background-position: center;
     background-size: cover;
 
-    filter: blur(5px);
+    filter: blur(10px) brightness(80%);
 
     position: absolute;
     top: 0;
@@ -45,9 +45,74 @@ body {
     z-index: -1;
 }
 
+.info:link,
+.info:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+    margin: 1rem;
+    padding: .5rem 1rem;
+
+    border: 2px solid currentColor;
+    border-radius: 50px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    overflow: hidden;
+    //transform: translate(-50%, -50%);
+
+    &:hover {
+        background-color: white;
+        border-color: transparent;
+        color: #202020;
+    }
+}
+
 .main {
+    width: 80%;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    &__left {
+        color: white;
+        margin-right: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__day {
+            font-size: 8rem;
+            font-weight: bold;
+
+            margin: 2rem;
+        }
+
+        &__month {
+            font-weight: bold;
+            font-size: 4rem;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        &__month {
+            height: 250px;
+            margin-bottom: 1rem;
+
+            &__name {
+                color: white;
+            }
+        }
+    }
 }
